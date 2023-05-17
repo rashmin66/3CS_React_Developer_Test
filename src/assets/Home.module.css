@@ -1,0 +1,37 @@
+.main_container{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    padding: 10%;
+  }
+  
+  .title{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 124, 226);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .sub_title{
+    font-size: 16px;
+    color: black;
+    margin-top: 5%;
+    margin-bottom:5%;
+  }
+  .grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:20px
+  }
+  @media (max-width: 991px) {
+    .grid_container{
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px
+  }
+}
+@media (max-width: px) {
+    .grid_container{
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px
+  }
+}
