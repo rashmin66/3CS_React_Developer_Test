@@ -13,7 +13,6 @@ function ClickedCard(props) {
   method: 'GET',
   headers: {
     'Content-Type': 'application/json',
-    // Add any additional headers if required
   }
 })
   .then(response => response.json())
@@ -31,11 +30,14 @@ function ClickedCard(props) {
 useEffect(() => { getData()},[])
 
   return (
-    <>
+    <> 
+       {/* design for clicked user card*/}
         <div className={styles.clicked_container}>
+          {/* back button */}
          <div onClick={()=>{navigate(`/` )}} className={styles.backed_title}>Back</div>
-          {details == null ?(null):(  <div className={styles.cliked_grid_container}>
-           
+          {details == null ?(null):(  
+
+          <div className={styles.cliked_grid_container}>
           <div className={styles.grid_item_01}>
             <div className={styles.image_container}>
             <img className={styles.image01} src={details.avatar}  
